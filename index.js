@@ -5,6 +5,8 @@ import {TouchableOpacity, Linking} from 'react-native'
 
 const ExternalLink = ({wrapper, url, style, onPress}) => {
 
+  const Wrapper = wrapper
+
   const _handlePress = () => {
     onPress()
     Linking.canOpenURL(url).then(supported => {
@@ -16,14 +18,11 @@ const ExternalLink = ({wrapper, url, style, onPress}) => {
     })
   }
 
-  render() {
-    const Wrapper = wrapper
-    return (
-      <Wrapper style={style} onPress={this._handlePress}>
-        {children}
-      </Wrapper>
-    )
-  }
+  return (
+    <Wrapper style={style} onPress={_handlePress}>
+      {children}
+    </Wrapper>
+  )
 }
 
 ExternalLink.propTypes = {
