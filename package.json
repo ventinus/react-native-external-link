@@ -1,0 +1,21 @@
+{
+  "name": "react-native-components",
+  "version": "1.0.0",
+  "description": "",
+  "module": "index",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ventinus/react-native-components.git"
+  },
+  "author": "ventinus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ventinus/react-native-components/issues"
+  },
+  "homepage": "https://github.com/ventinus/react-native-components#readme",
+  "dependencies": {
+    "prop-types": "^15.5.10",
+    "react": "^15.5.4",
+    "react-native": "^0.45.1"
+  }
+}
